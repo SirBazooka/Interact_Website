@@ -1,0 +1,248 @@
+/* Post Page */
+
+.post-page .container-medium hr {
+  border-color: #c6c6c6;
+  margin-bottom: 50px;
+}
+
+/* 
+.post-page h4{
+    font-family: var(--font-primary);
+    font-weight: 300;
+    text-transform: uppercase;
+} */
+
+.post-page p {
+  font-size: 18px;
+  font-weight: 400;
+  /* margin-bottom: 2%; */
+  letter-spacing: 1px;
+  color: #ECECEC;
+  line-height: 1.6;
+  /* margin: 20px; */
+}
+
+.post-page {
+  margin-top: 8rem;
+}
+
+.box-gallery-post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  margin: 1%;
+
+}
+
+
+.post-page__header-image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+  aspect-ratio: 1/1;
+}
+
+.post-header {
+  display: grid;
+  background-color: rgb(30, 34, 37, .7);
+  border-radius: 10px;
+  /* opacity: 75%; */
+  /* align-content: center; */
+  /* width: 25vw; */
+  justify-content: center;
+  align-items: center;
+}
+
+.post-header p {
+  margin-top: 10px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: .05rem;
+  line-height: 1.3rem;
+  letter-spacing: 1px;
+  margin: 2% 0 2% 0;
+}
+
+.post-head-event {
+  /* margin-top: 12px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+}
+
+.post-head-event h3 {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: 1px;
+  width: 100%;
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+.text-post {
+  /* margin-top: 60px;
+  margin-bottom: 60px; */
+}
+
+.post-body-event {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: fit-content(100%);
+  grid-template-rows: fit-content(100%);
+  justify-content: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+  .box-gallery-post {
+    align-items: center;
+  }
+}
+
+/* 
+@media screen and (min-width: 767px) and (max-width: 1100px) {
+  .box-gallery img{
+    width: 45vw;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  .post-header {
+    align-content: center;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .box-gallery-post {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .post-page__header-image {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5%;
+    display: block;
+  }
+
+  .text-post p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+    color: #ECECEC;
+    line-height: 1.6;
+    margin: 1%;
+    margin-bottom: 5%;
+    /* text-justify: distribute; */
+  }
+
+  .text-post {
+    margin-top: 5%
+  }
+
+  .post-header {
+    background-color: transparent;
+    opacity: 100%;
+  }
+
+  .post-body-event {
+    padding: 0%;
+  }
+
+  .post-header {
+    margin-top: 1.5rem;
+  }
+}
+
+
+.box-social .social:hover p {
+  padding: 0 6px;
+  font-size: .8rem;
+}
+
+
+
+.box-social {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 20px;
+}
+
+.box-social .social {
+  padding: 12px 18px;
+  justify-content: center;
+  border-radius: 4px;
+  border-image-slice: 1;
+  background-color: transparent;
+}
+
+.contact-email {
+  border: 2px solid;
+  border-image-source: linear-gradient(51.06deg, #8edbff 25%, #8EA3FF 75%);
+}
+
+.contact-form {
+  border: 2px solid;
+  border-image-source: linear-gradient(51.06deg, #8edbff 25%, #8EA3FF 75%);
+  width: 100%;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.box-social .social {
+  cursor: pointer;
+}
+
+.box-social .social p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  justify-content: center;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container-medium .box-social {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.box-social .social p {
+  transition: all .3s ease-in-out;
+  /* font-size: 1rem; */
+}
+
+.text-post h4 {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 80%;
+  /* margin-top: 4rem; */
+  font-size: 1.5em;
+  margin-bottom: 2.5rem;
+}
+
+.best-photo-section h4 {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 80%;
+  /* margin-top: 4rem; */
+  font-size: 1.5em;
+  margin-bottom: 2.5rem;
+}
+
+.intro-page {
+  margin-top: 8rem;
+}
